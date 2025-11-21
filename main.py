@@ -47,13 +47,12 @@ def send_slack_message(message, channel):
 def main():
     for cluster in clusters:
         # 메시지 제목 설정
-        header = f":loudspeaker: *『인사총무팀 공지』* \n\n"
+header = f":loudspeaker: *『셔틀관련 공지』* <!channel>\n\n"
 
-        notice_msg = (
-            f"유진영 화이팅\n"
-            f"\n\n"
-            f"감사합니다.\n"
-       )
+notice_msg = (
+    f"안산센터 3pl 상품 포장할때 제발 좀 아이스팩 잘 넣자\n"
+    f"애들아"
+)
  
         # 메시지 본문
         body = header + notice_msg
